@@ -1,0 +1,7 @@
+C:\Users\azat\source\repos\HomeWorkXmlStudent\HomeWorkXmlStudent\bin\Debug\HomeWorkXmlStudent.exe.config
+C:\Users\azat\source\repos\HomeWorkXmlStudent\HomeWorkXmlStudent\bin\Debug\HomeWorkXmlStudent.exe
+C:\Users\azat\source\repos\HomeWorkXmlStudent\HomeWorkXmlStudent\bin\Debug\HomeWorkXmlStudent.pdb
+C:\Users\azat\source\repos\HomeWorkXmlStudent\HomeWorkXmlStudent\obj\Debug\HomeWorkXmlStudent.csprojAssemblyReference.cache
+C:\Users\azat\source\repos\HomeWorkXmlStudent\HomeWorkXmlStudent\obj\Debug\HomeWorkXmlStudent.csproj.CoreCompileInputs.cache
+C:\Users\azat\source\repos\HomeWorkXmlStudent\HomeWorkXmlStudent\obj\Debug\HomeWorkXmlStudent.exe
+C:\Users\azat\source\repos\HomeWorkXmlStudent\HomeWorkXmlStudent\obj\Debug\HomeWorkXmlStudent.pdb
