@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<citys>
+<city>
+  <id type ="Guid">83f1cfea-a3ed-491a-a354-ae013ccc25b4</id>
+  <name>Астана</name>
+  <countryName>Казахстан</countryName>
+  <latitude>57,1</latitude>
+  <longitude>22,5</longitude>>
+</city>
+<city>
+  <id type ="int">2</id>
+  <name>Алматы</name>
+  <countryName>Казахстан</countryName>
+  <latitude>52,1</latitude>
+  <longitude>19,1</longitude>>
+</city>
+<city>
+  <id type ="Guid">03488afa-a519-4a6a-8bd7-a8755b61c1e6</id>
+  <name>Санкт-Петербург</name>
+  <countryName>Россия</countryName>
+  <latitude>69,1</latitude>
+  <longitude>19,4</longitude>>
+</city>
+</citys>
