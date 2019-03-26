@@ -15,34 +15,59 @@ namespace HomeWorkXml
     {
         static void Main(string[] args)
         {
-            List<Item> items = new List<Item>();
-            String URLString = "https://habrahabr.ru/rss/interesting/";
-            //XmlTextReader reader = new XmlTextReader(URLString);
-            XmlDocument xDoc = new XmlDocument();
-
-            xDoc.Load(URLString);
-            XmlElement xRoot = xDoc.DocumentElement;
-
-            foreach (XmlElement xNode in xRoot)
+            using (WebClient webClient = new WebClient())
             {
-                Item item = new Item();
-                XmlNode attr = xNode.Attributes.GetNamedItem("title");
-                if (attr != null)
-                    item.Title = attr.Value;
+                List<Item> items = new List<Item>();
+                webClient.Encoding = Encoding.UTF8;
+                string xml = webClient.DownloadString("https://habrahabr.ru/rss/interesting/");
+                XmlDocument xDoc = new XmlDocument();
 
-                foreach (XmlNode childnode in xNode.ChildNodes)
+                xDoc.LoadXml(xml);
+                XmlNode titleElement = null;
+                XmlNode linkElement = null;
+                XmlNode descriptionElement = null;
+                XmlNode pubDateElement = null;
+
+                foreach (XmlElement element in xDoc.GetElementsByTagName("item"))
                 {
-                    if (childnode.Name == "link")
-                        item.Link = childnode.InnerText;
-                    if (childnode.Name == "description")
-                        item.Description = childnode.InnerText;
+                    
+
+                    foreach (XmlElement child in element)
+                    {
+                        if (child.Name == "title")
+                        {
+                            titleElement = child;
+                        }
+                        else if (child.Name == "link")
+                        {
+                            linkElement = child;
+                        }
+                        else if (child.Name == "description")
+                        {
+                            descriptionElement = child;
+                        }
+                        else if (child.Name == "pubDate")
+                        {
+                            pubDateElement = child;
+                        }
+                    }
+                    var item = new Item
+                    {
+                        Title = titleElement.InnerText,
+                        Link = linkElement.InnerText,
+                        Description = descriptionElement.InnerText,
+                        PubDate = pubDateElement.InnerText
+                    };
+
+                    items.Add(item);
                 }
-
-                items.Add(item);
+                foreach (Item i in items)
+                {
+                    Console.WriteLine("Заголовок: \t{0}\nСсылка: \t{1}\nНовость: \t{2}\nДата: \t{3}", i.Title, i.Link, i.Description, i.PubDate);
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                }
             }
-            foreach (Item i in items)
-                Console.WriteLine("{0}, {1}, {2}", i.Title, i.Link, i.Description);
-
 
             Console.ReadLine();
 
