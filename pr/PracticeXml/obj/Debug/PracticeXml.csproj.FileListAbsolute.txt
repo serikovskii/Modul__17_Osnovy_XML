@@ -1,0 +1,7 @@
+C:\Users\azat\source\repos\PracticeXml\PracticeXml\bin\Debug\PracticeXml.exe.config
+C:\Users\azat\source\repos\PracticeXml\PracticeXml\bin\Debug\PracticeXml.exe
+C:\Users\azat\source\repos\PracticeXml\PracticeXml\bin\Debug\PracticeXml.pdb
+C:\Users\azat\source\repos\PracticeXml\PracticeXml\obj\Debug\PracticeXml.csprojAssemblyReference.cache
+C:\Users\azat\source\repos\PracticeXml\PracticeXml\obj\Debug\PracticeXml.csproj.CoreCompileInputs.cache
+C:\Users\azat\source\repos\PracticeXml\PracticeXml\obj\Debug\PracticeXml.exe
+C:\Users\azat\source\repos\PracticeXml\PracticeXml\obj\Debug\PracticeXml.pdb

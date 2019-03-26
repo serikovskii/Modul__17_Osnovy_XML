@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfCar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Car>
+    <Model>Toyota Camry 70</Model>
+    <Number>123qqq01</Number>
+    <Engine>2.4</Engine>
+    <Color>red</Color>
+  </Car>
+  <Car>
+    <Model>Audi r8</Model>
+    <Number>001iii01</Number>
+    <Engine>3.2</Engine>
+    <Color>black</Color>
+  </Car>
+  <Car>
+    <Model>BMW X6</Model>
+    <Number>789zzz02</Number>
+    <Engine>3</Engine>
+    <Color>blue</Color>
+  </Car>
+</ArrayOfCar>
